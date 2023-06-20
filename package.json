@@ -1,0 +1,16 @@
+{
+  "name": "vincci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mohammadreza hayati",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohammadrezahayati/vincci/issues"
+  },
+  "keywords": [],
+  "repository": "git+https://github.com/mohammadrezahayati/vincci.git"
+}
