@@ -1,14 +1,15 @@
 import { TableTypeConstructor } from 'src/types/types';
+import truncate from './truncate';
 
-function Table<T, Y>({ head, body }: TableTypeConstructor<T, Y>) {
+
+const Table = <T, Y>({ head, body }: TableTypeConstructor<T, Y>) => {
     // TODO : create table
     // TODO : create header for table
     // TODO : create body for table
-    console.log(head);
+    truncate(head)
     console.log(body);
-    
 }
 
-console.log("inja")
+Table({ head: [1, 2, 3], body: ["inja", "onja", "hameja"] })
 
 export default Table;
