@@ -38,6 +38,7 @@ Thumbs.db
 dist/**/*
 build
 tests/
+.vscode/
 build/**/*.test.js
 build/**/*.test.ts
 # ignore yarn.lock
