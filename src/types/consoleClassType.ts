@@ -1,3 +1,3 @@
 export interface ConsoleClassConstructorType {
-    message: NodeJS.WritableStream
+    message: NodeJS.WritableStream;
 }

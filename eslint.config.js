@@ -12,4 +12,6 @@ export default [
     },
   },
   ...tseslint.configs.recommended,
+  ...tseslint.configs.strict,
+  ...tseslint.configs.stylistic,
 ];
