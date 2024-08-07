@@ -6,6 +6,9 @@ function Table<T, Y>({ head, body }: TableTypeConstructor<T, Y>) {
     // TODO : create body for table
     console.log(head);
     console.log(body);
+    
 }
+
+console.log("inja")
 
 export default Table;
