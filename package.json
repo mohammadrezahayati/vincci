@@ -33,6 +33,7 @@
   "devDependencies": {
     "@eslint/js": "^9.8.0",
     "@types/eslint__js": "^8.42.3",
+    "ansi-styles": "^6.2.1",
     "chalk": "^5.3.0",
     "chalk-animation": "^2.0.3",
     "color-convert": "^2.0.1",
@@ -45,8 +46,5 @@
     "ts-jest": "^29.2.4",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1"
-  },
-  "dependencies": {
-    "ansi-styles": "^6.2.1"
   }
 }
