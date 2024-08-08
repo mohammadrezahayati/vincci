@@ -1,50 +1,51 @@
 {
-  "name": "vincci",
-  "version": "1.0.0",
-  "description": "",
-  "main": "./build/index.js",
-  "types": "./build/index.d.ts",
-  "type": "module",
-  "files": [
-    "build"
-  ],
-  "scripts": {
-    "test": "jest",
-    "test-watch": "jest --watchAll",
-    "build": "tsc",
-    "watch": "tsc -w",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "eslint \"src/**\" "
-  },
-  "author": "mohammadreza hayati",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mohammadrezahayati/vincci/issues"
-  },
-  "keywords": [
-    "table",
-    "debugger",
-    "node_table",
-    "helper",
-    "vincci"
-  ],
-  "repository": "git+https://github.com/mohammadrezahayati/vincci.git",
-  "homepage": "https://github.com/mohammadrezahayati/vincci#readme",
-  "devDependencies": {
-    "@eslint/js": "^9.8.0",
-    "@types/eslint__js": "^8.42.3",
-    "ansi-styles": "^6.2.1",
-    "chalk": "^5.3.0",
-    "chalk-animation": "^2.0.3",
-    "color-convert": "^2.0.1",
-    "eslint": "^9.8.0",
-    "globals": "^15.9.0",
-    "gradient-string": "^2.0.2",
-    "jest": "^29.7.0",
-    "prettier": "3.3.3",
-    "supports-color": "^9.4.0",
-    "ts-jest": "^29.2.4",
-    "typescript": "^5.5.4",
-    "typescript-eslint": "^8.0.1"
-  }
+    "name": "vincci",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./build/index.js",
+    "types": "./build/index.d.ts",
+    "type": "module",
+    "files": [
+        "build"
+    ],
+    "scripts": {
+        "test": "jest",
+        "test-watch": "jest --watchAll",
+        "build": "tsc",
+        "watch": "tsc -w",
+        "format-ts": "prettier --write \"src/**/*.ts\"",
+        "format-js": "prettier --write \"src/**/*.js\"",
+        "lint": "eslint \"src/**\" "
+    },
+    "author": "mohammadreza hayati",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/mohammadrezahayati/vincci/issues"
+    },
+    "keywords": [
+        "table",
+        "debugger",
+        "node_table",
+        "helper",
+        "vincci"
+    ],
+    "repository": "git+https://github.com/mohammadrezahayati/vincci.git",
+    "homepage": "https://github.com/mohammadrezahayati/vincci#readme",
+    "devDependencies": {
+        "@eslint/js": "^9.8.0",
+        "@types/eslint__js": "^8.42.3",
+        "ansi-styles": "^6.2.1",
+        "chalk": "^5.3.0",
+        "chalk-animation": "^2.0.3",
+        "color-convert": "^2.0.1",
+        "eslint": "^9.8.0",
+        "globals": "^15.9.0",
+        "gradient-string": "^2.0.2",
+        "jest": "^29.7.0",
+        "prettier": "3.3.3",
+        "supports-color": "^9.4.0",
+        "ts-jest": "^29.2.4",
+        "typescript": "^5.5.4",
+        "typescript-eslint": "^8.0.1"
+    }
 }
