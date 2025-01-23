@@ -1,6 +1,6 @@
 {
   "name": "vincci",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "dist/index.js",
   "exports": {
@@ -53,14 +53,13 @@
     "supports-color": "^9.4.0",
     "ts-jest": "^29.2.4",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.0.1"
-  },
-  "dependencies": {
+    "typescript-eslint": "^8.0.1",
     "@typescript-eslint/eslint-plugin": "^8.20.0",
     "@typescript-eslint/parser": "^8.20.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.1.0"
-  }
+  },
+  "dependencies": {}
 }
