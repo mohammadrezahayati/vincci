@@ -1,3 +1,3 @@
-export * from "./app/app";
+export * from "./app";
 export * from "./types"
 export * from "./util"

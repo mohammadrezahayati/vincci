@@ -1,5 +1,5 @@
 import chalk, { ChalkInstance } from 'chalk'; // Importing necessary chalk modules for text styling
-import { TableOptions } from '../types/types';
+import { TableOptions } from '../types';
 import { getEdgeStyles } from '../util/getEdgeStyle';
 import { isChalkStyle } from '../util/isChalkStyle';
 import { predefinedEdgeStyles } from '../util/predefinedEdgeStyles'; // Import custom edge styles for table borders
