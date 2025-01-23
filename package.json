@@ -1,18 +1,12 @@
 {
   "name": "vincci",
   "version": "1.1.1",
-  "description": "",
+  "description": "Vincci is a NodeJs [TypeScript] library designed to allow users to display fancy tables in the terminal, with advanced row and column formatting, color support checks, and more.",
   "main": "dist/index.js",
-  "exports": {
-    ".": {
-      "import": "dist/index.mjs",
-      "require": "dist/index.js"
-    }
-  },
   "types": "dist/index.d.ts",
   "type": "module",
   "files": [
-    "build"
+    "dist"
   ],
   "scripts": {
     "test": "jest",
