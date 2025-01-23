@@ -37,6 +37,7 @@ Thumbs.db
 # Ignore built ts files
 dist/**/*
 build
+dist/
 tests/
 .vscode/
 build/**/*.test.js
