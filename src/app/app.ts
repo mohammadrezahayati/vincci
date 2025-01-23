@@ -11,7 +11,7 @@ import { isSupport } from '../util/isSupport';
  * @param rows - Array of row data (each row should correspond to columns).
  * @param options - Optional table customization (e.g., header colors, row styles).
  */
-export const displayCustomTable = (
+export const vincci = (
     columns: string[],
     rows: unknown[][],
     options: TableOptions = {},
