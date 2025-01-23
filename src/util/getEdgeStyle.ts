@@ -1,4 +1,4 @@
-import { EdgeStyle, PredefinedEdgeStyles } from 'src/types/types';
+import { EdgeStyle, PredefinedEdgeStyles } from '../types';
 import { predefinedEdgeStyles } from './predefinedEdgeStyles';
 
 // Function to get the appropriate edge styles for the table border

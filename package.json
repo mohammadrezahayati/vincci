@@ -2,8 +2,14 @@
   "name": "vincci",
   "version": "1.1.0",
   "description": "",
-  "main": "./build/index.js",
-  "types": "./build/index.d.ts",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "import": "dist/index.mjs",
+      "require": "dist/index.js"
+    }
+  },
+  "types": "dist/index.d.ts",
   "type": "module",
   "files": [
     "build"

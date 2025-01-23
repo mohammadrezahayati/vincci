@@ -1,0 +1,6 @@
+/src
+/.git
+/tsconfig.json
+/eslint.config.js
+/npm-debug.log
+/README.md
