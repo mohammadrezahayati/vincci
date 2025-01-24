@@ -71,62 +71,62 @@ if (isSupport()) {
   console.log("Your terminal doesn't support colors.");
 }
 ```
+
 ## Full Example with custom option
 
 ```typescript
-const columns = ["ID", "Name", "Age", "City", "Status"];
+const columns = ['ID', 'Name', 'Age', 'City', 'Status'];
 const rows = [
-    ["asd", "Alice", 25, "New York", "Active"],    
-    [2, "Bob", 30, "San Francisco", "Inactive"],
-    [3, "Charlie", 35, "Los Angeles", "Inactive"], 
-    ["asdasd", "David", 40, "", "Active"],         
-    ["sg", "Bob", 30, "San Francisco", "Inactive"], 
-    [6, "Chris", 35, "Los Angeles", "Active"], 
-    [7, "David", 40],       
+  ['asd', 'Alice', 25, 'New York', 'Active'],
+  [2, 'Bob', 30, 'San Francisco', 'Inactive'],
+  [3, 'Charlie', 35, 'Los Angeles', 'Inactive'],
+  ['asdasd', 'David', 40, '', 'Active'],
+  ['sg', 'Bob', 30, 'San Francisco', 'Inactive'],
+  [6, 'Chris', 35, 'Los Angeles', 'Active'],
+  [7, 'David', 40],
 ];
 const options = {
-    columnAlignments: {
-        ID: "right",    
-        Name: "left", 
-        Age: "center", 
-        City: "left",   
-        Flag: "center",  
+  columnAlignments: {
+    ID: 'right',
+    Name: 'left',
+    Age: 'center',
+    City: 'left',
+    Flag: 'center',
+  },
+  headerColors: {
+    ID: 'green.bold',
+    Name: 'yellow.underline',
+    Age: 'red',
+    City: 'cyan.italic',
+  },
+  rowStyleKey: 'Name',
+  rowStyles: {
+    Charlie: {
+      ID: 'green.bold',
     },
-    headerColors: {
-        ID: "green.bold",
-        Name: "yellow.underline", 
-        Age: "red",     
-        City: "cyan.italic",
-    },
-    rowStyleKey: "Name",
-    rowStyles: {
-        "Charlie": {
-            ID: "green.bold", 
-        },
-        "David": "red.italic",
-    },
-    edgeStyles: "rounded",
-    highlightColumn: "Name",
-    rowBackgrounds: {
-        odd: "bgWhite", 
-        even: "bgCyan" 
-    }
+    David: 'red.italic',
+  },
+  edgeStyles: 'rounded',
+  highlightColumn: 'Name',
+  rowBackgrounds: {
+    odd: 'bgWhite',
+    even: 'bgCyan',
+  },
 };
 vincci(columns, rows, options);
 ```
 
-
 ## Table Options
-| Option Name | Type | Example | Description |
-|---|---|---|---|
-| `headerColors` | `string` | `headerColors: {Column1: "green.bold",Column2: "yellow.underline",Column3: "red",Column4: "cyan.italic"}`  | Map of column names to color/style functions for headers. |
-| `rowStyles` | `string` | `rowStyles: {"Charlie": {Column name: "green.bold"},"David": "red.italic"}` | Map of specific row values to style names or a record of styles. |
-| `rowStyleKey` | `string` |  `rowStyleKey: "Column2"` | The column name that determines the cell to style for row-based styling. |
-| `rowBackgrounds` | `{ odd: "Chalk background"; even: "Chalk background" }` |  `{odd: "bgWhite", even: "bgCyan" }` | Background colors for odd/even rows. |
-| `edgeStyles` | `single, bold, rounded, dotted, thick, minimal, heavyDashed, double` or `{ topLeftCorner: string; topRightCorner: string; bottomLeftCorner: string; bottomRightCorner: string; horizontalSeparator: string; verticalSeparator: string; topCenter: string; vertical: string; bottomCenter: string; verticalRowLeft: string; verticalRowRight: string; }` | `edgeStyles: "rounded"` | Customize table border styles using either predefined styles or custom definitions. |
-| `highlightColumn` | `string` `it's an chalk color` | `highlightColumn: "column name"` | Column to highlight (simulate hover effect). |
-| `columnAlignments` | `left,center,right` | `{column1: "right",column2: "left", column3: "center",.. }` | Column alignment options (left, center, or right). |
 
+| Option Name        | Type                                                                                                                                                                                                                                                                                                                                                    | Example                                                                                                   | Description                                                                         |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| `headerColors`     | `string`                                                                                                                                                                                                                                                                                                                                                | `headerColors: {Column1: "green.bold",Column2: "yellow.underline",Column3: "red",Column4: "cyan.italic"}` | Map of column names to color/style functions for headers.                           |
+| `rowStyles`        | `string`                                                                                                                                                                                                                                                                                                                                                | `rowStyles: {"Charlie": {Column name: "green.bold"},"David": "red.italic"}`                               | Map of specific row values to style names or a record of styles.                    |
+| `rowStyleKey`      | `string`                                                                                                                                                                                                                                                                                                                                                | `rowStyleKey: "Column2"`                                                                                  | The column name that determines the cell to style for row-based styling.            |
+| `rowBackgrounds`   | `{ odd: "Chalk background"; even: "Chalk background" }`                                                                                                                                                                                                                                                                                                 | `{odd: "bgWhite", even: "bgCyan" }`                                                                       | Background colors for odd/even rows.                                                |
+| `edgeStyles`       | `single, bold, rounded, dotted, thick, minimal, heavyDashed, double` or `{ topLeftCorner: string; topRightCorner: string; bottomLeftCorner: string; bottomRightCorner: string; horizontalSeparator: string; verticalSeparator: string; topCenter: string; vertical: string; bottomCenter: string; verticalRowLeft: string; verticalRowRight: string; }` | `edgeStyles: "rounded"`                                                                                   | Customize table border styles using either predefined styles or custom definitions. |
+| `highlightColumn`  | `string` `it's an chalk color`                                                                                                                                                                                                                                                                                                                          | `highlightColumn: "column name"`                                                                          | Column to highlight (simulate hover effect).                                        |
+| `columnAlignments` | `left,center,right`                                                                                                                                                                                                                                                                                                                                     | `{column1: "right",column2: "left", column3: "center",.. }`                                               | Column alignment options (left, center, or right).                                  |
 
 ## Contributing
 
